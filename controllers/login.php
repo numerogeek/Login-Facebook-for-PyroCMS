@@ -46,7 +46,7 @@ class login extends Public_Controller
                                 // we redirect the user just logged in
                                 if (Settings::get('login_setting') == 1)
                                 {
-                                        redirect(Settings::get('login_redirect') .'/'. $pyrocms_user->user_id);
+                                        redirect(Settings::get('login_redirect') . '/' . $pyrocms_user->user_id);
                                 }
                                 else
                                 {
@@ -114,7 +114,7 @@ class login extends Public_Controller
                                         // we redirect the user just logged in
                                         if (Settings::get('login_setting') == 1)
                                         {
-                                                redirect(Settings::get('login_redirect') .'/'. $pyrocms_user->user_id);
+                                                redirect(Settings::get('login_redirect') . '/' . $pyrocms_user->user_id);
                                         }
                                         else
                                         {
@@ -134,7 +134,9 @@ class login extends Public_Controller
                 }
                 else
                 {
-                        
+                        $this->template
+                                ->title($this->module_details['name'])
+                                ->build('login');
                 }
         }
 
