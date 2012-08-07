@@ -25,6 +25,10 @@ First of all you need to download the Facebook-SDK spark available :
 on Github https://github.com/joeyblake/Facebook-SDK-Spark
 on getsparks.com http://getsparks.org/static/archives/Facebook-SDK/Facebook-SDK-0.0.1.zip
 
+Facebook sdk should be installed in the following folder :
+system/sparks/facebook-sdk/0.0.1
+
+The control in details is case sensitive !!!
 
 # Licence
 
